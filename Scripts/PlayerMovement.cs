@@ -6,12 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float Speed;
- 
 
-    // Update is called once per frame
+
+    //Player cannot move when collided
     void Update()
     {
-        Vector2 movementVector = new Vector2(Input.GetAxis("Horizontal"), 0);
-        transform.Translate(movementVector * Time.deltaTime * Speed);
+         Vector2 movementVector = new Vector2(Input.GetAxis("Horizontal"), 0);
+         transform.Translate(movementVector * Time.deltaTime * Speed);
     }
+
+   
 }
