@@ -13,7 +13,7 @@ public class Countdown : MonoBehaviour
     public TextMeshProUGUI text;
 
 
-        private void Start()
+    private void Start()
     {
         currentTime = startingTime;
     }
