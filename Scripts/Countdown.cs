@@ -26,6 +26,7 @@ public class Countdown : MonoBehaviour
         if (currentTime <= 0)
         {
             currentTime = 0;
+            FindObjectOfType<GameManager>().EndGame();
         }
         else if (currentTime <= 3) {
             text.color = Color.red;
