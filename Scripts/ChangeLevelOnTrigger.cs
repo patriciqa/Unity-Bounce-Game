@@ -11,8 +11,12 @@ public class ChangeLevelOnTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Level Change");
-        LoadNextLevel();
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log("Level Change");
+            LoadNextLevel();
+        }
+        
     }
 
     public void LoadNextLevel()
