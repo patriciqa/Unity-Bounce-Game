@@ -283,12 +283,6 @@ Transform:
   m_Father: {fileID: 1319980662}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &358776951 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1170956727525300660, guid: 229b720481d7844468c9dd0d493ddfe1,
-    type: 3}
-  m_PrefabInstance: {fileID: 1170956727703394755}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &391108326
 GameObject:
   m_ObjectHideFlags: 3
@@ -1886,8 +1880,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 358776951}
-  m_Follow: {fileID: 358776951}
+  m_LookAt: {fileID: 2011724918}
+  m_Follow: {fileID: 2011724918}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 6
@@ -1897,7 +1891,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.6, y: 1}
+    m_SensorSize: {x: 1.6004515, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2644,6 +2638,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2011724918 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1170956727525300660, guid: 229b720481d7844468c9dd0d493ddfe1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2147244896}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2039198020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2655,7 +2655,6 @@ GameObject:
   - component: {fileID: 2039198022}
   - component: {fileID: 2039198021}
   - component: {fileID: 2039198023}
-  - component: {fileID: 2039198024}
   m_Layer: 0
   m_Name: bounce 1
   m_TagString: Untagged
@@ -2972,8 +2971,9 @@ PolygonCollider2D:
       - {x: 6.3670106, y: -16.692783}
       - {x: 6.762887, y: -17.15464}
       - {x: 7.818557, y: -17.418558}
-      - {x: 9.468041, y: -19.859795}
-      - {x: 9.6, y: -19.859795}
+      - {x: 9.521732, y: -19.82911}
+      - {x: 9.532301, y: -29.50193}
+      - {x: 9.571135, y: -29.494186}
       - {x: 9.6, y: -0.13195877}
       - {x: 9.534021, y: -0.13195877}
     - - {x: 9.468041, y: 22.696909}
@@ -3002,7 +3002,9 @@ PolygonCollider2D:
       - {x: 8.082475, y: 2.9030929}
       - {x: 8.544331, y: 2.4412372}
       - {x: 9.468041, y: 1.7814434}
-      - {x: 9.6, y: 1.7814434}
+      - {x: 9.56894, y: 1.7056351}
+      - {x: 9.579704, y: -0.13018036}
+      - {x: 9.594241, y: -0.12957501}
       - {x: 9.6, y: 22.696909}
     - - {x: 8.082475, y: 38.070103}
       - {x: 7.422681, y: 36.684536}
@@ -3018,7 +3020,9 @@ PolygonCollider2D:
       - {x: 8.61031, y: 25.995876}
       - {x: 9.0721655, y: 25.006187}
       - {x: 9.468041, y: 24.412373}
-      - {x: 9.6, y: 24.412373}
+      - {x: 9.55204, y: 24.348804}
+      - {x: 9.557107, y: 22.69281}
+      - {x: 9.576301, y: 22.691734}
       - {x: 9.6, y: 38.927837}
       - {x: 9.534021, y: 38.927837}
     - - {x: 8.544331, y: 63.34021}
@@ -3047,24 +3051,6 @@ PolygonCollider2D:
       - {x: 9.6, y: 39.71959}
       - {x: 9.6, y: 63.736084}
       - {x: 9.468041, y: 63.736084}
---- !u!68 &2039198024
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039198020}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 9fbeedf9c91153c4890cc3023fe83414, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 9.590651, y: -19.858902}
-  - {x: 9.587344, y: -29.497513}
 --- !u!1 &2120515386
 GameObject:
   m_ObjectHideFlags: 0
@@ -3146,7 +3132,7 @@ Transform:
   m_Father: {fileID: 1319980662}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1170956727703394755
+--- !u!1001 &2147244896
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3207,6 +3193,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170956727525300660, guid: 229b720481d7844468c9dd0d493ddfe1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170956727525300660, guid: 229b720481d7844468c9dd0d493ddfe1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 1170956727525300661, guid: 229b720481d7844468c9dd0d493ddfe1,
         type: 3}
