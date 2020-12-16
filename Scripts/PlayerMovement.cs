@@ -29,8 +29,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        StartCoroutine(CollisionRoutine()); 
-        if (collision.gameObject.tag == "Obstacle")
+
+        StartCoroutine(CollisionRoutine());
+        if(collision.gameObject.tag == "Obstacle")
         {
             tickSource.Play();
         }
