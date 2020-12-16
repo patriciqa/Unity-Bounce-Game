@@ -6,9 +6,17 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float Speed;
+<<<<<<< HEAD
+    public AudioSource tickSource;
+=======
     private bool Move = true;
     public float Delay = 1f;
+>>>>>>> 3991a095b93ead453e656420c5002f980c216198
 
+        private void Start()
+    {
+        tickSource = GetComponent<AudioSource>();
+    }
 
     //Player cannot move when collided
     public void Update()
@@ -35,4 +43,16 @@ public class PlayerMovement : MonoBehaviour
         Move = true;
     }
 
+<<<<<<< HEAD
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            tickSource.Play();
+        }
+    }
+
+
+=======
+>>>>>>> 3991a095b93ead453e656420c5002f980c216198
 }
