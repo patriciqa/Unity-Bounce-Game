@@ -11,25 +11,25 @@ public class Countdown : MonoBehaviour
     float currentTime = 0f;
     public float startingTime;
     public TextMeshProUGUI text;
-    bool started = false;
+    bool started = true;
 
     private void Start()
     {
         currentTime = startingTime;
-        started = false;
+        started = true;
     }
 
-    private void delayedTime() {
+ /*   private void delayedTime() {
         if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)) {
             started = true;
         }
-    }
+    }*/
 
     
 
     void Update()
     {
-        delayedTime();
+        //delayedTime();
         if (started == true)
         {
             currentTime -= 1 * Time.deltaTime;
