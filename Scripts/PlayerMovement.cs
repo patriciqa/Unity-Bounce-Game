@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     //Player cannot move when collided
-    void Update()
+   public void Update()
     {
          Vector2 movementVector = new Vector2(Input.GetAxis("Horizontal"), 0);
          transform.Translate(movementVector * Time.deltaTime * Speed);
