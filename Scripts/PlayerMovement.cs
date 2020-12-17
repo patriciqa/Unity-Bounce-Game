@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         tickSource = GetComponent<AudioSource>();
+        StartCoroutine(StartDelay());
     }
 
     //Player cannot move when collided
@@ -29,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         StartCoroutine(CollisionRoutine());
         if(collision.gameObject.tag == "Obstacle")
         {
@@ -37,6 +37,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    IEnumerator StartDelay()
+    {
+        Move = false;
+        yield return new WaitForSeconds(3);
+        Move = true;
+    }
 
     IEnumerator CollisionRoutine()
     {

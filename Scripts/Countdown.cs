@@ -11,26 +11,26 @@ public class Countdown : MonoBehaviour
     float currentTime = 0f;
     public float startingTime;
     public TextMeshProUGUI text;
-    bool started = true;
+    private bool StartCountdown;
+    private float Wait = 3.0f;
 
     private void Start()
     {
         currentTime = startingTime;
-        started = true;
+        StartCoroutine(StartDelay());
+
     }
 
- /*   private void delayedTime() {
-        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.LeftArrow)) {
-            started = true;
-        }
-    }*/
 
-    
 
     void Update()
     {
-        //delayedTime();
-        if (started == true)
+        LevelCountdown();
+    }
+
+    public void LevelCountdown()
+    {
+        if(StartCountdown == true)
         {
             currentTime -= 1 * Time.deltaTime;
             text.text = currentTime.ToString("0");
@@ -43,8 +43,14 @@ public class Countdown : MonoBehaviour
             else if (currentTime <= 3)
             {
                 text.color = Color.red;
-
             }
         }
+    }
+
+    IEnumerator StartDelay()
+    {
+        StartCountdown = false;
+        yield return new WaitForSeconds(Wait);
+        StartCountdown = true;
     }
 }
