@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private bool Move = true;
     public float Delay = 1f;
 
-        private void Start()
+    private void Start()
     {
         tickSource = GetComponent<AudioSource>();
     }
