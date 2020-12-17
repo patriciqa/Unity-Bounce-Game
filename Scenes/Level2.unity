@@ -382,7 +382,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f586fea04c5654542a52617686c37e7b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1848,13 +1848,14 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+      objectReference: {fileID: 11400000, guid: 4c6d1a055c107bf4d8ff03338e7dc6f7,
         type: 2}
     - target: {fileID: 3217081088772649497, guid: 04bfa790493bb6e488f7bbb080fd551b,
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: -2917965197416638092, guid: 4c6d1a055c107bf4d8ff03338e7dc6f7,
+        type: 2}
     - target: {fileID: 3217081088772649497, guid: 04bfa790493bb6e488f7bbb080fd551b,
         type: 3}
       propertyPath: m_fontSize
@@ -1865,10 +1866,20 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3217081088772649497, guid: 04bfa790493bb6e488f7bbb080fd551b,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 25.952688
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217081088772649497, guid: 04bfa790493bb6e488f7bbb080fd551b,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 97.86724
+      objectReference: {fileID: 0}
     - target: {fileID: 3217081088772649499, guid: 04bfa790493bb6e488f7bbb080fd551b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -375.54
+      value: -375
       objectReference: {fileID: 0}
     - target: {fileID: 3217081088772649499, guid: 04bfa790493bb6e488f7bbb080fd551b,
         type: 3}
@@ -2011,6 +2022,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1170956727525300665, guid: 229b720481d7844468c9dd0d493ddfe1,
+        type: 3}
+      propertyPath: Speed
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 229b720481d7844468c9dd0d493ddfe1, type: 3}
@@ -2737,6 +2753,11 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 2133802097}
+    - target: {fileID: 123958318392442471, guid: c28f1b36313ce354e824656fdb55a906,
+        type: 3}
+      propertyPath: startingTime
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c28f1b36313ce354e824656fdb55a906, type: 3}
 --- !u!114 &2133802097 stripped
